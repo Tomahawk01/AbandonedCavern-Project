@@ -1,5 +1,5 @@
 function Collisions(){
-	// Horizontal
+// Horizontal
 if place_meeting(x + h_speed, y, obj_solid_wall)
 {
     yplus = 0;										// Slide Up
@@ -25,15 +25,15 @@ else
     yMinus = 0;										// Slide Down
     while(!place_meeting(x + h_speed, y + yMinus, obj_solid_wall) && yMinus <= abs(1 * h_speed))
 	{
-        yMinus += 1;
+        yMinus += 0.5;
     }
     //still not sure why this needs to be here, but it does for math reasons.
-    yMinus -= 1;
+    yMinus -= 0.5;
     
     //if there is a place of meeting at yMinus (speed+1) but not at yMinus (speed) AND we're already on the ground, move down
-    if(place_meeting(x + h_speed, round(y + yMinus) + 1, obj_solid_wall) && !place_meeting(x + h_speed, round(y + yMinus), obj_solid_wall) && place_meeting(x, y + 1, obj_solid_wall))
+    if(place_meeting(x + h_speed, round(y + yMinus) + 1, obj_solid_wall) && !place_meeting(x + h_speed, round(y + yMinus), obj_solid_wall) && on_ground)
 	{
-        y = round(y + yMinus);
+        y += yMinus;
     }
 }
 

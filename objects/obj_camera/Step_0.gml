@@ -3,12 +3,12 @@
 if not instance_exists(target) exit;
 
 x = lerp(x, target.x, 0.1);
-y = lerp(y, target.y - height / 4, 0.1);
+y = lerp(y, target.y - global.view_height / 4, 0.1);
 
-x = clamp(x, width / 2, room_width - width / 2);					// Camera stops when it reaches the end of the room (horizontal)
-y = clamp(y, height / 2, room_height - height / 2);					// Camera stops when it reaches the end of the room (vertical)
+x = clamp(x, global.view_width / 2, room_width - global.view_width / 2);					// Camera stops when it reaches the end of the room (horizontal)
+y = clamp(y, global.view_height / 2, room_height - global.view_height / 2);					// Camera stops when it reaches the end of the room (vertical)
 
-camera_set_view_pos(view_camera[0], x - width / 2, y - height / 2);
+camera_set_view_pos(view_camera[0], x - global.view_width / 2, y - global.view_height / 2);
 
 // Parallax effect for bg
 /*

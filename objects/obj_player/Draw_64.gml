@@ -9,7 +9,10 @@ draw_sprite(spr_healthbar_border, 0, healthbar_x, healthbar_y);
 
 draw_set_color(c_black);
 
-draw_text(30, 70, string("FPS: ") + string(fps_real));					// FPS
-draw_text(30, 90, string("X: ") + string(x));							// X position of player
-draw_text(30, 110, string("Y: ") + string(y));							// Y position of player
+draw_text(30, 70, string("FPS: ") + string(fps_real));						// FPS
+draw_text(30, 90, string("X: ") + string(x));								// X position of player
+draw_text(30, 110, string("Y: ") + string(y));								// Y position of player
 draw_text(30, 130, string("Jump buffer: ") + string(coyote_counter));		// Jump buffer
+draw_text(30, 150, string("Wall jump buffer: ") + string(wall_jump_delay));	// Wall jump buffer
+draw_text(30, 170, string("Health: ") + string(global.player_hp));			// HP
+
