@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_slope_moreangle",
-    "path": "sprites/spr_slope_moreangle/spr_slope_moreangle.yy",
+    "name": "spr_test_moreangle",
+    "path": "sprites/spr_test_moreangle/spr_test_moreangle.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_solid_wall",
-    "path": "objects/obj_solid_wall/obj_solid_wall.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision blocks",
-    "path": "folders/Objects/Collision blocks.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_slope_moreangle",
+  "name": "obj_test_moreangle",
   "tags": [],
   "resourceType": "GMObject",
 }

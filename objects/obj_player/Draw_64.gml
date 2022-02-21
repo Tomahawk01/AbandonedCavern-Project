@@ -13,6 +13,7 @@ draw_text(30, 70, string("FPS: ") + string(fps_real));						// FPS
 draw_text(30, 90, string("X: ") + string(x));								// X position of player
 draw_text(30, 110, string("Y: ") + string(y));								// Y position of player
 draw_text(30, 130, string("Jump buffer: ") + string(coyote_counter));		// Jump buffer
-draw_text(30, 150, string("Wall jump buffer: ") + string(wall_jump_delay));	// Wall jump buffer
-draw_text(30, 170, string("Health: ") + string(global.player_hp));			// HP
+draw_text(30, 150, string("Health: ") + string(global.player_hp));			// HP
 
+var col_v = c_white;
+draw_text_color(1190, 680, string("v 0.1.05"), col_v, col_v, col_v, col_v, 1);									// Current version of the game

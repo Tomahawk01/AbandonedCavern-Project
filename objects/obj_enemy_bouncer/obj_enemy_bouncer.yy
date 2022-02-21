@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
+    "path": "folders/Objects/Entities/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_enemy_bouncer",

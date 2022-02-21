@@ -1,4 +1,5 @@
 /// @desc
+/*
 if (!global.pause) exit;
 
 input_up		= keyboard_check_pressed(global.key_up);
@@ -31,7 +32,7 @@ if (inputting)
 			{
 				ds_grid[# 3, menu_option[page]] += h_input * 0.01;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
-				/*script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]);*/
+				script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]);
 			}
 			
 		break;
@@ -94,3 +95,4 @@ if (input_enter)
 	// Audio
 	audio_play_sound(snd_menu_selected, 10, false);
 }
+*/

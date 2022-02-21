@@ -1,0 +1,10 @@
+DONE:
+1. Smooth jumping
+2. Ghost platforms (jumpthrough)
+3. Added an inscription with the current version of the game
+4. Water effect
+5. Lightning system
+
+TODO:
+- 
+-----  Review my plans for the game and make it not too difficult to develop

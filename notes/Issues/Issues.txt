@@ -1,0 +1,5 @@
+
+obj_solid_jumpthrough_platform:
+- Issue when player is slides on the wall and there is a platform under him, he continues to slide through it
+
+ For everything to work properly, I can't put platforms close to the walls on which the character slides.

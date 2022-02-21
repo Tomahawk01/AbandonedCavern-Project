@@ -2,9 +2,11 @@
 
 // Player inputs
 var h_direction = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+// var attack = keyboard_check_pressed(vk_control);
 var jump = keyboard_check_pressed(vk_space);
+var jump_held = keyboard_check(vk_space);
 var up = keyboard_check(ord("W"));
-var down = keyboard_check(ord("S"));
+down = keyboard_check(ord("S"));
 
 on_ground = place_meeting(x, y + 1, obj_solid_wall);
 on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);
@@ -44,7 +46,7 @@ if (on_wall != 0) && (v_speed > 0)
 v_speed += _gravity_final;
 v_speed = clamp(v_speed, -v_speed_max_final, v_speed_max_final);
 
-// other movement
+// Checks when on ground or not
 if (on_ground)
 {
 	coyote_counter = coyote_max;								// When on gound reset coyote jump buffer
@@ -88,11 +90,17 @@ else
 			sprite_index = spr_player_jump;
 		}
 	}
+	
+	if (v_speed < 0 && !jump_held)								// Smooth jumping
+	{
+		v_speed = max(v_speed, -jump_speed / 2);
+	}
 }
 
 if (jump && coyote_counter > 0)									// Jumping ** while jump buffer is higher than 0 we can jump
 {
 	v_speed = -7;
+	
 	repeat (5)													// Dust from player jump
 	{
 		with (instance_create_layer(x, bbox_bottom, "Player", obj_player_dust))
@@ -146,13 +154,6 @@ if (sprite_index == spr_player_run && footstep_wait == 0)
 {
 	audio_play_sound(choose(snd_player_footstep1, snd_player_footstep2, snd_player_footstep3), 1, false);
 	footstep_wait = 30;
-	repeat (5)													// Dust from player walk
-	{
-		with (instance_create_layer(x, bbox_bottom, "Player", obj_player_dust))
-		{
-			v_speed = 0;
-		}
-	}
 }
 else if (footstep_wait > 0)
 {

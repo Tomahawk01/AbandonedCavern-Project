@@ -1,3 +1,4 @@
+/*
 if (!global.pause) exit;
 
 var gwidth = global.view_width, gheight = global.view_height;
@@ -135,3 +136,4 @@ repeat (ds_height)
 }
 
 draw_set_valign(fa_top);
+*/

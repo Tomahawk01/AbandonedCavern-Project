@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collision blocks",
+    "path": "folders/Objects/Collision blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid_wall",
