@@ -14,8 +14,8 @@
   "soundFile": "snd_player_footstep2.wav",
   "duration": 0.466508,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player_sounds",
+    "path": "folders/Sounds/Player_sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_player_footstep2",

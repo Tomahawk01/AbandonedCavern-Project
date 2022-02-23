@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Static collision walls",
+    "path": "folders/Sprites/Static collision walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_solid_wall",

@@ -1,10 +1,28 @@
 DONE:
+//	------		v 0.1.05
 1. Smooth jumping
 2. Ghost platforms (jumpthrough)
 3. Added an inscription with the current version of the game
 4. Water effect
 5. Lightning system
+//	------		v 0.1.06 - v 0.2.00
+6. Signposts
+7. Moving platforms
+8. Pause
+9.
+
+50 / 50:
+- Spikes (need to add some interactions)
 
 TODO:
-- 
------  Review my plans for the game and make it not too difficult to develop
+- Doors that can open only if you find a button
+- Death mechanic
+- Collectibles (with floating)
+- Temporary power-ups
+- Aspect ratio
+- UI
+- Menu overlay (like in pokeypoke now)
+- Portals to other locations (maybe it will teleport player to lobby and he will choose the next level) 
+- Save-Load system
+
+AND at the end design 2-3 locations

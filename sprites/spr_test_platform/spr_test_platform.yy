@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Static test blocks",
+    "path": "folders/Sprites/Static test blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_test_platform",

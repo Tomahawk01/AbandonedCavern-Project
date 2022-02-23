@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Static test blocks",
+    "path": "folders/Objects/Static test blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_test_moreangle",

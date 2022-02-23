@@ -24,11 +24,3 @@ on_wall = 0;						// Wall
 dust = 0;
 wall_jump_delay = 0;
 wall_jump_delay_max = 17;
-
-global.player_hp = 50;
-global.player_hp_max = global.player_hp;
-healthbar_width = 100;
-healthbar_height = 12;
-healthbar_x = 40;
-healthbar_y = 30;
-

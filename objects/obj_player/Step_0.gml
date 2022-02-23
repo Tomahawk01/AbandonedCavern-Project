@@ -2,14 +2,14 @@
 
 // Player inputs
 var h_direction = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-// var attack = keyboard_check_pressed(vk_control);
 var jump = keyboard_check_pressed(vk_space);
 var jump_held = keyboard_check(vk_space);
 var up = keyboard_check(ord("W"));
 down = keyboard_check(ord("S"));
 
-on_ground = place_meeting(x, y + 1, obj_solid_wall);
-on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);
+on_ground = place_meeting(x, y + 1, obj_solid_wall);											// Checking if the player is on ground
+on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);	// Checking if the player is on a wall
+var on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);			// For moving platforms
 
 #region // Animations & Movement
 
@@ -45,6 +45,14 @@ if (on_wall != 0) && (v_speed > 0)
 
 v_speed += _gravity_final;
 v_speed = clamp(v_speed, -v_speed_max_final, v_speed_max_final);
+
+// Moving platforms
+if (on_moving_platform && bbox_bottom <= on_moving_platform.bbox_top)
+{
+	// Add velocity
+	x += on_moving_platform.moveX;
+	y += on_moving_platform.moveY;
+}
 
 // Checks when on ground or not
 if (on_ground)

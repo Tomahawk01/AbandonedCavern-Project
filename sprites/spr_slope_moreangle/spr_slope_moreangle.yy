@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a9bbfa6d-609f-4a17-844f-03ee955aead5","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9bbfa6d-609f-4a17-844f-03ee955aead5","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"LayerId":{"name":"ed20e050-789b-438c-a813-bb12973b294f","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"a9bbfa6d-609f-4a17-844f-03ee955aead5","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"LayerId":{"name":"f99f69fb-23ba-41fd-8d6b-103777a2b9f0","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a9bbfa6d-609f-4a17-844f-03ee955aead5","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"LayerId":{"name":"ed20e050-789b-438c-a813-bb12973b294f","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_slope_moreangle","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},"resourceVersion":"1.0","name":"a9bbfa6d-609f-4a17-844f-03ee955aead5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Static collision walls",
+    "path": "folders/Sprites/Static collision walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slope_moreangle",

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision blocks",
-    "path": "folders/Objects/Collision blocks.yy",
+    "name": "Static collision blocks",
+    "path": "folders/Objects/Static collision blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid_slope",
