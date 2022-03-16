@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_test_moreangle","path":"sprites/spr_test_moreangle/spr_test_moreangle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_test_moreangle",
     "tags": [],
     "resourceType": "GMSequence",

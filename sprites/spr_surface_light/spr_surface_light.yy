@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_surface_light","path":"sprites/spr_surface_light/spr_surface_light.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_surface_light",
     "tags": [],
     "resourceType": "GMSequence",

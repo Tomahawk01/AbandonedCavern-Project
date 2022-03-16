@@ -142,7 +142,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_particle_rain_hard","path":"sprites/spr_particle_rain_hard/spr_particle_rain_hard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_particle_rain_hard",
     "tags": [],
     "resourceType": "GMSequence",

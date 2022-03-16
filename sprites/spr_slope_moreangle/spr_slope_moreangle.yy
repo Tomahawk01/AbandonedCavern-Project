@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slope_moreangle","path":"sprites/spr_slope_moreangle/spr_slope_moreangle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slope_moreangle",
     "tags": [],
     "resourceType": "GMSequence",

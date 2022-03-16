@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_solid_wall","path":"sprites/spr_solid_wall/spr_solid_wall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_solid_wall",
     "tags": [],
     "resourceType": "GMSequence",

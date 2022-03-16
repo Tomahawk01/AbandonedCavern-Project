@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"landscape_0005_6_background","path":"sprites/landscape_0005_6_background/landscape_0005_6_background.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "landscape_0005_6_background",
     "tags": [],
     "resourceType": "GMSequence",

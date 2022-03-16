@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"landscape_0001_2_trees","path":"sprites/landscape_0001_2_trees/landscape_0001_2_trees.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "landscape_0001_2_trees",
     "tags": [],
     "resourceType": "GMSequence",

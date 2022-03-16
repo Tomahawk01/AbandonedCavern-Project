@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"landscape_0003_4_mountain","path":"sprites/landscape_0003_4_mountain/landscape_0003_4_mountain.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "landscape_0003_4_mountain",
     "tags": [],
     "resourceType": "GMSequence",

@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_particle_rain","path":"sprites/spr_particle_rain/spr_particle_rain.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_particle_rain",
     "tags": [],
     "resourceType": "GMSequence",

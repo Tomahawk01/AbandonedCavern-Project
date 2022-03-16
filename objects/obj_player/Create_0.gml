@@ -1,8 +1,5 @@
 /// @desc Variables
 
-audio_play_sound(snd_ost_bloodborne_metal, 10, true);
-audio_play_sound(snd_rain_forest, 20, true);
-
 footstep_wait = 0;
 
 v_speed = 0;
@@ -24,3 +21,9 @@ on_wall = 0;						// Wall
 dust = 0;
 wall_jump_delay = 0;
 wall_jump_delay_max = 17;
+
+if (global.checkpointR == room)		// Checkpoint
+{
+	x = global.checkpointx;
+	y = global.checkpointy;
+}

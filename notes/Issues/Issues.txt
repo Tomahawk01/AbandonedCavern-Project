@@ -9,3 +9,9 @@ obj_moving_platform:
 
 obj_pause:
 - Need to find how to stop sounds
+
+with checkpoints:
+while teleporting player must collide with new checkpoint to avoid bug with sounds
+
+LIGHTNING:
+ Toggle off persistent in obj_surface_light to avoid duplication of light in other room

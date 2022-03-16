@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Tree___Pine_Snow_00","path":"sprites/Tree___Pine_Snow_00/Tree___Pine_Snow_00.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Tree___Pine_Snow_00",
     "tags": [],
     "resourceType": "GMSequence",

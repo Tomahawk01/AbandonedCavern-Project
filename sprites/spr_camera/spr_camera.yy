@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_camera","path":"sprites/spr_camera/spr_camera.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_camera",
     "tags": [],
     "resourceType": "GMSequence",

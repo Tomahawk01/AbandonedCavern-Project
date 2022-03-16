@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_solid_platform","path":"sprites/spr_solid_platform/spr_solid_platform.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_solid_platform",
     "tags": [],
     "resourceType": "GMSequence",

@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_test_block_32","path":"sprites/spr_test_block_32/spr_test_block_32.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_test_block_32",
     "tags": [],
     "resourceType": "GMSequence",

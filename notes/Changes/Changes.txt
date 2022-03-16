@@ -9,12 +9,15 @@ DONE:
 6. Signposts
 7. Moving platforms
 8. Pause
-9.
+9. Checkpoints
+10. Spikes
+11. Added room template
 
 50 / 50:
-- Spikes (need to add some interactions)
+-
 
 TODO:
+- Outline Shader
 - Doors that can open only if you find a button
 - Death mechanic
 - Collectibles (with floating)

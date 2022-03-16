@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"landscape_0004_5_clouds","path":"sprites/landscape_0004_5_clouds/landscape_0004_5_clouds.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "landscape_0004_5_clouds",
     "tags": [],
     "resourceType": "GMSequence",
