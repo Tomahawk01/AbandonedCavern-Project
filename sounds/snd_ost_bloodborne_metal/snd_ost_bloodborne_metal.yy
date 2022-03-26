@@ -14,8 +14,8 @@
   "soundFile": "snd_ost_bloodborne_metal.mp3",
   "duration": 219.715912,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "OST",
+    "path": "folders/Sounds/OST.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_ost_bloodborne_metal",

@@ -14,8 +14,8 @@
   "soundFile": "snd_rain_forest.mp3",
   "duration": 111.48,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "OST",
+    "path": "folders/Sounds/OST.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_rain_forest",

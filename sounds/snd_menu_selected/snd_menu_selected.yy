@@ -14,8 +14,8 @@
   "soundFile": "snd_menu_selected.mp3",
   "duration": 1.43675,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Menu",
+    "path": "folders/Sounds/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_menu_selected",

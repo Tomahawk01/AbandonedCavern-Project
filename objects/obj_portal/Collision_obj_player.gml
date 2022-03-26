@@ -1,3 +1,3 @@
 /// @desc
 
-room_goto_next();
+TransitionStart(target, sq_fadeout, sq_fadein);

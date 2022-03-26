@@ -14,8 +14,8 @@
   "soundFile": "snd_ost_test.mp3",
   "duration": 254.354279,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "OST",
+    "path": "folders/Sounds/OST.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_ost_test",

@@ -1,5 +1,8 @@
 /// @desc Variables
 
+coins = 0;
+runes = 0;
+
 footstep_wait = 0;
 
 v_speed = 0;
@@ -20,7 +23,7 @@ on_ladder = false;					// Ladder
 on_wall = 0;						// Wall
 dust = 0;
 wall_jump_delay = 0;
-wall_jump_delay_max = 17;
+wall_jump_delay_max = 10;
 
 if (global.checkpointR == room)		// Checkpoint
 {

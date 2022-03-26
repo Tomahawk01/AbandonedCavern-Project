@@ -1,11 +1,22 @@
 /// @desc Player core logic
 
 // Player inputs
-var h_direction = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var jump = keyboard_check_pressed(vk_space);
-var jump_held = keyboard_check(vk_space);
-var up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
+if (!instance_exists(obj_fade))
+{
+	var h_direction = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+	var jump = keyboard_check_pressed(vk_space);
+	var jump_held = keyboard_check(vk_space);
+	var up = keyboard_check(ord("W"));
+	down = keyboard_check(ord("S"));
+}
+else
+{
+	h_direction = 0;
+	jump = 0;
+	jump_held = 0;
+	up = 0;
+	down = 0;
+}
 
 on_ground = place_meeting(x, y + 1, obj_solid_wall);											// Checking if the player is on ground
 on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);	// Checking if the player is on a wall
@@ -107,6 +118,7 @@ else
 
 if (jump && coyote_counter > 0)									// Jumping ** while jump buffer is higher than 0 we can jump
 {
+	audio_play_sound(snd_player_jump, 1, false);
 	v_speed = -7;
 	
 	repeat (5)													// Dust from player jump
