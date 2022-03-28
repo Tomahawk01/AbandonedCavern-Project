@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Portals",
+    "path": "folders/Objects/Entities/Portals.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_portal",

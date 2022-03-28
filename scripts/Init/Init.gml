@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Init(){
+	global.coins = 0;
+	
 	global.checkpoint = noone;
 	global.checkpointR = rm_dev_secret;
 	global.checkpointx = 940;
@@ -14,5 +16,7 @@ function Init(){
 		audio_play_sound(snd_ost_bloodborne_metal, 1, true);
 	}
 	
-	room_goto_next();
+	window_set_cursor(cr_default);
+	
+	randomize();
 }

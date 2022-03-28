@@ -168,7 +168,7 @@ Collisions();													// In Script
 
 #endregion
 
-#region // Sounds
+#region // Footstep sounds
 
 if (sprite_index == spr_player_run && footstep_wait == 0)
 {

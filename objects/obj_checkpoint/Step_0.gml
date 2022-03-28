@@ -15,7 +15,9 @@ if (global.checkpoint == id)
 			global.checkpointx = x;
 			global.checkpointy = y;
 			global.checkpointR = room;
-	
+			
+			Save_Game();
+			
 			audio_play_sound(snd_checkpoint, 1, false);
 		}
 	}

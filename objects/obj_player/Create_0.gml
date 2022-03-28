@@ -1,8 +1,5 @@
 /// @desc Variables
 
-coins = 0;
-runes = 0;
-
 footstep_wait = 0;
 
 v_speed = 0;

@@ -22,21 +22,19 @@ DONE:
 15. Collectibles coins & runes
 16. Screen Shake
 //  ------		v 0.2.0 - v 0.3.0
-17. 
-18. 
-19. 
-20. 
+17. Menu screen
+18. UI
+19. Add transition fade in/out when the game starts
+20. Full functional Save-Load system
+21. Portals to other locations (maybe it will teleport player to lobby and he will choose the next level) 
+22. 
+23. 
 
 TODO:
 - Make lobby with teleports to other levels
 - Doors that can open only if you find a button
-- Add transition fade in/out when the game starts
 - Temporary power-ups
 - Aspect ratio
-- UI
-- Menu overlay (like in pokeypoke now)
 - More traps
-- Portals to other locations (maybe it will teleport player to lobby and he will choose the next level) 
-- Save-Load system
 
 AND at the end design 2-3 locations
