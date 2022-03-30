@@ -1,10 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Save_Game(){
-	// Saving coins objects
+	with (game_controller)
+	{
+		ds_map_secure_save(save_data, file_name);
+	}
 	
-	
-	// Saving other data
+	// Save other data
 	if (file_exists("Save.sav"))
 	{
 		file_delete("Save.sav");

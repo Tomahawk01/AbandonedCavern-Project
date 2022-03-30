@@ -1,10 +1,15 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Load_Game(){
-	// Loading coins objects
+	with (game_controller)
+	{
+		if (!file_exists(file_name)) exit;
+		
+		ds_map_destroy(save_data);
+		save_data = ds_map_secure_load(file_name);
+	}
 	
-	
-	// Loading other data
+	// Load other data
 	if (file_exists("Save.sav"))
 	{
 		ini_open("Save.sav");

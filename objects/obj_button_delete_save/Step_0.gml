@@ -11,6 +11,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 		if (file_exists("Save.sav"))
 		{
 			file_delete("Save.sav");
+			file_delete("CoinsData.sav");
 		}
 		
 		instance_destroy();

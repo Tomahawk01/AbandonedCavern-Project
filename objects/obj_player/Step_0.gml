@@ -11,6 +11,9 @@ if (!instance_exists(obj_fade))
 }
 else
 {
+	h_speed = 0;
+	v_speed = 0;
+	
 	h_direction = 0;
 	jump = 0;
 	jump_held = 0;
@@ -42,6 +45,30 @@ if (on_wall != 0) && (!on_ground) && (jump)
 	
 	h_speed = -on_wall * h_speed_wjump;
 	v_speed = v_speed_wjump;
+}
+
+// Water
+if (place_meeting(x, y, obj_water_zone))
+{
+	_gravity = _gravity_swimming;
+	v_speed = lerp(v_speed, 1, 0.07);
+	
+	if (!are_in_water)
+	{
+		v_speed /= 1.3;
+		instance_create_layer(x, y, "Water_zone", obj_water_splash);
+	}
+	are_in_water = true;
+	
+	if (random_range(0, 30) <= 1)
+	{
+		instance_create_layer(x, y, "Water_zone", obj_water_bubble);
+	}
+}
+else
+{
+	_gravity = _gravity_normal;
+	are_in_water = false;
 }
 
 // Vertical movement
@@ -104,15 +131,22 @@ else
 	else
 	{
 		dust = 0;
-		if (on_ladder == false)
+		if (!on_ladder)
 		{
 			sprite_index = spr_player_jump;
 		}
 	}
-	
+
 	if (v_speed < 0 && !jump_held)								// Smooth jumping
 	{
 		v_speed = max(v_speed, -jump_speed / 2);
+	}
+	else if (are_in_water)										// Possible to jump infinitely if in water
+	{
+		if (jump)
+		{
+			v_speed = -7;
+		}
 	}
 }
 
@@ -130,7 +164,10 @@ if (jump && coyote_counter > 0)									// Jumping ** while jump buffer is highe
 	}
 }
 
-// Ladder
+#endregion
+
+#region // Ladder
+
 if (up || down)
 {
 	if place_meeting(x, y, obj_ladder) on_ladder = true;
@@ -140,8 +177,10 @@ if (on_ladder)
 {
 	sprite_index = spr_player_ladder;
 	image_speed = 0;
+	
 	v_speed = 0;
 	h_speed = 0;												// For lock on the ladder
+	
 	if (up)
 	{
 		v_speed = -2;
@@ -156,7 +195,7 @@ if (on_ladder)
 	if (jump)
 	{
 		on_ladder = false;
-		v_speed = -4;											// For jumping off the ladder (when pressing up or down and try jump off nothing happens) !!!!!
+		v_speed = -4;											// For jumping off the ladder
 	}
 }
 

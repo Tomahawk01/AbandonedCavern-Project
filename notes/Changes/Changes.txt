@@ -27,11 +27,15 @@ DONE:
 19. Add transition fade in/out when the game starts
 20. Full functional Save-Load system
 21. Portals to other locations (maybe it will teleport player to lobby and he will choose the next level) 
-22. 
-23. 
+22. Falling platforms
+23. Water
+24. 
+25. 
 
 TODO:
+- movable rocks
 - Make lobby with teleports to other levels
+- Water && swimming
 - Doors that can open only if you find a button
 - Temporary power-ups
 - Aspect ratio

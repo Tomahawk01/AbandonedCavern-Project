@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Signposts",
+    "path": "folders/Objects/Entities/Signposts.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_signpost_1",

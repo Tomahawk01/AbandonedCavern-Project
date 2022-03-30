@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_player_death.ogg",
-  "duration": 0.076621,
+  "soundFile": "snd_player_death.wav",
+  "duration": 1.837279,
   "parent": {
     "name": "Player_sounds",
     "path": "folders/Sounds/Player_sounds.yy",

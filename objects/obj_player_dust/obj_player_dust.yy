@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Entities/Player.yy",
+    "name": "Particles",
+    "path": "folders/Objects/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_dust",

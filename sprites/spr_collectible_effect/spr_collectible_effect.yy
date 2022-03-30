@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Interactable",
-    "path": "folders/Sprites/Interactable.yy",
+    "name": "Particles",
+    "path": "folders/Sprites/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_collectible_effect",

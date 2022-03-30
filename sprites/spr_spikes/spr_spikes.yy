@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Interactable",
-    "path": "folders/Sprites/Interactable.yy",
+    "name": "Danger",
+    "path": "folders/Sprites/Interactable/Danger.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_spikes",

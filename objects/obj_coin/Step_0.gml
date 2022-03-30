@@ -7,6 +7,7 @@ if (place_meeting(x, y, obj_player) && !collected)
 	image_index = 0;
 	collected = true;
 	audio_play_sound(snd_coin_collect, 10, false);
+	ds_map_replace(game_controller.save_data, key, true);
 }
 
 // Collected
