@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.35,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_menu_button_hover.wav",
-  "duration": 0.283651,
+  "soundFile": "snd_player_waterdrop.mp3",
+  "duration": 1.872,
   "parent": {
-    "name": "Menu",
-    "path": "folders/Sounds/Menu.yy",
+    "name": "Player_sounds",
+    "path": "folders/Sounds/Player_sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_menu_button_hover",
+  "name": "snd_player_waterdrop",
   "tags": [],
   "resourceType": "GMSound",
 }

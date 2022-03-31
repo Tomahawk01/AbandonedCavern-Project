@@ -8,6 +8,7 @@ if (!instance_exists(obj_fade))
 	var jump_held = keyboard_check(vk_space);
 	var up = keyboard_check(ord("W"));
 	down = keyboard_check(ord("S"));
+	var dash = keyboard_check_pressed(vk_shift);
 }
 else
 {
@@ -19,24 +20,47 @@ else
 	jump_held = 0;
 	up = 0;
 	down = 0;
+	dash = 0;
 }
 
 on_ground = place_meeting(x, y + 1, obj_solid_wall);											// Checking if the player is on ground
 on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);	// Checking if the player is on a wall
 var on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);			// For moving platforms
 
+// Dashing
+dash_duration = max(dash_duration - 1, 0);														// Decrement dash duration every step
+dash_cooldown = max(dash_cooldown - 1, 0);														// Decrement dash cooldown every step
+
+if (dash_duration > 0)
+{
+	v_speed = 0;
+}
+
+if (dash_cooldown <= 0)
+{
+	if (dash)
+	{
+		dash_duration = 15;
+		dash_cooldown = 45;
+		h_speed = image_xscale * dash_speed;
+	}
+}
+
 #region // Animations & Movement
 
-wall_jump_delay = max(wall_jump_delay-1, 0);
+wall_jump_delay = max(wall_jump_delay - 1, 0);
 
-if (wall_jump_delay == 0)
+if (dash_duration <= 0)
 {
-	if (h_direction != 0) 
+	if (wall_jump_delay == 0)
 	{
-		image_xscale = h_direction;
-	}
+		if (h_direction != 0) 
+		{
+			image_xscale = h_direction;
+		}
 
-	h_speed = h_direction * walk_speed;
+		h_speed = h_direction * walk_speed;
+	}
 }
 // Wall jump
 if (on_wall != 0) && (!on_ground) && (jump)
@@ -57,8 +81,11 @@ if (place_meeting(x, y, obj_water_zone))
 	{
 		v_speed /= 1.3;
 		instance_create_layer(x, y, "Water_zone", obj_water_splash);
+		audio_play_sound(snd_player_waterdrop, 10, false);					// Water SFX
 	}
+	
 	are_in_water = true;
+	dash_speed = dash_speed_water;
 	
 	if (random_range(0, 30) <= 1)
 	{
@@ -69,6 +96,7 @@ else
 {
 	_gravity = _gravity_normal;
 	are_in_water = false;
+	dash_speed = dash_speed_max;
 }
 
 // Vertical movement
@@ -148,6 +176,11 @@ else
 			v_speed = -7;
 		}
 	}
+}
+
+if (dash_duration > 0 )
+{
+	sprite_index = spr_player_dash;
 }
 
 if (jump && coyote_counter > 0)									// Jumping ** while jump buffer is higher than 0 we can jump

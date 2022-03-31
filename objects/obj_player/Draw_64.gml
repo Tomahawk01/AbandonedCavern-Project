@@ -5,7 +5,7 @@ var col_v = c_white;
 draw_set_font(ft_gui);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_text_color(1280, 720, string("v 0.2.07 alpha"), col_v, col_v, col_v, col_v, 1);		// Current version of the game
+draw_text_color(1280, 720, string("v 0.2.08 alpha"), col_v, col_v, col_v, col_v, 1);		// Current version of the game
 draw_text_color(40, 720, string(fps), col_v, col_v, col_v, col_v, 1);						// Current FPS
 
 

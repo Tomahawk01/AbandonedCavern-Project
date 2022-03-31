@@ -1,5 +1,8 @@
 /// @desc Set up camera
 
+x = global.checkpointx;
+y = global.checkpointy;
+
 target = obj_player;
 
 global.view_height = camera_get_view_height(view_camera[0]);

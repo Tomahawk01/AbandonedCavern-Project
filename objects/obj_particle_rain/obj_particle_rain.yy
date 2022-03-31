@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/Objects/Particles.yy",
+    "name": "Rain",
+    "path": "folders/Objects/Particles/Rain.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_particle_rain",

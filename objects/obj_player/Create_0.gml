@@ -10,7 +10,7 @@ h_speed_wjump = 4;
 _gravity = 0.3;
 _gravity_normal = 0.3;
 _gravity_wall = 0.1;
-walk_speed = 4;
+walk_speed = 3.5;
 jump_speed = 6;
 
 coyote_counter = 0;					// for jump buffer
@@ -21,7 +21,13 @@ on_ladder = false;					// Ladder
 on_wall = 0;						// Wall
 dust = 0;
 wall_jump_delay = 0;
-wall_jump_delay_max = 9;
+wall_jump_delay_max = 7;
+
+dash_duration = 0;					// Dash
+dash_speed_max = 9;
+dash_speed = dash_speed_max;
+dash_speed_water = 5.5;
+dash_cooldown = 0;
 
 _gravity_swimming = 0;				// Water
 are_in_water = false;
