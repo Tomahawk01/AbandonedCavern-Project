@@ -1,0 +1,11 @@
+obj_pause:
+- Need to find how to stop sounds
+
+obj_solid_jumpthrough_platform:
+- Issue when player is slides on the wall and there is a platform under him, he continues to slide through it
+
+  For everything to work properly, I can't put platforms close to the walls on which the character slides.
+
+Gates:
+Doors & buttons must have unique gate_id in creation code
+

@@ -10,10 +10,12 @@ h_speed_wjump = 4;
 _gravity = 0.3;
 _gravity_normal = 0.3;
 _gravity_wall = 0.1;
-walk_speed = 3.5;
+walk_speed_max = 4;
+walk_speed = walk_speed_max;
+walk_speed_water = 2;
 jump_speed = 6;
 
-coyote_counter = 0;					// for jump buffer
+coyote_counter = 0;					// for coyote time
 coyote_max = 8;
 
 on_ladder = false;					// Ladder

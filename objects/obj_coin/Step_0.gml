@@ -1,5 +1,9 @@
 /// @desc
- 
+
+y = y + sin(timer * 0.03) * 0.05;
+
+timer++;
+
 // Collect coin
 if (place_meeting(x, y, obj_player) && !collected)
 {

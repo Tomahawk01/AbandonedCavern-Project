@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Danger",
-    "path": "folders/Objects/Entities/Danger.yy",
+    "name": "Spikes",
+    "path": "folders/Objects/Entities/Danger/Spikes.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spike",

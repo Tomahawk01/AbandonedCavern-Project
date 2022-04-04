@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Lightning",
+    "path": "folders/Objects/Lightning.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_surface_light",

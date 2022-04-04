@@ -665,8 +665,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Interactable",
-    "path": "folders/Sprites/Interactable.yy",
+    "name": "Portals",
+    "path": "folders/Sprites/Interactable/Portals.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_portal",

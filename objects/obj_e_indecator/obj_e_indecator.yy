@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Signposts",
+    "path": "folders/Objects/Entities/Signposts.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_e_indecator",

@@ -8,11 +8,13 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 	{
 		audio_play_sound(snd_menu_button_selected, 1, false);
 		
-		if (file_exists("Save.sav"))
+		if (file_exists("Save.sav") || file_exists("CoinsData.sav"))
 		{
 			file_delete("Save.sav");
 			file_delete("CoinsData.sav");
 		}
+		
+		Init();
 		
 		instance_destroy();
 	}

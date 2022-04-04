@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Zones (Detectors)",
+    "path": "folders/Objects/Zones (Detectors).yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_water_zone",

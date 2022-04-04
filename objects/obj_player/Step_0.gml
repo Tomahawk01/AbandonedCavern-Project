@@ -25,7 +25,7 @@ else
 
 on_ground = place_meeting(x, y + 1, obj_solid_wall);											// Checking if the player is on ground
 on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);	// Checking if the player is on a wall
-var on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);			// For moving platforms
+on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);			// For moving platforms
 
 // Dashing
 dash_duration = max(dash_duration - 1, 0);														// Decrement dash duration every step
@@ -41,7 +41,7 @@ if (dash_cooldown <= 0)
 	if (dash)
 	{
 		dash_duration = 15;
-		dash_cooldown = 45;
+		dash_cooldown = 40;
 		h_speed = image_xscale * dash_speed;
 	}
 }
@@ -62,6 +62,7 @@ if (dash_duration <= 0)
 		h_speed = h_direction * walk_speed;
 	}
 }
+
 // Wall jump
 if (on_wall != 0) && (!on_ground) && (jump)
 {
@@ -86,6 +87,7 @@ if (place_meeting(x, y, obj_water_zone))
 	
 	are_in_water = true;
 	dash_speed = dash_speed_water;
+	walk_speed = walk_speed_water;
 	
 	if (random_range(0, 30) <= 1)
 	{
@@ -97,6 +99,7 @@ else
 	_gravity = _gravity_normal;
 	are_in_water = false;
 	dash_speed = dash_speed_max;
+	walk_speed = walk_speed_max;
 }
 
 // Vertical movement
@@ -112,18 +115,11 @@ if (on_wall != 0) && (v_speed > 0)
 v_speed += _gravity_final;
 v_speed = clamp(v_speed, -v_speed_max_final, v_speed_max_final);
 
-// Moving platforms
-if (on_moving_platform && bbox_bottom <= on_moving_platform.bbox_top)
-{
-	// Add velocity
-	x += on_moving_platform.moveX;
-	y += on_moving_platform.moveY;
-}
-
 // Checks when on ground or not
 if (on_ground)
 {
-	coyote_counter = coyote_max;								// When on gound reset coyote jump buffer
+	coyote_counter = coyote_max;								// When on gound reset coyote buffer
+	
 	if (h_direction != 0)
 	{
 		sprite_index = spr_player_run;
@@ -133,7 +129,7 @@ if (on_ground)
 }
 else
 {
-	coyote_counter -= 1;										// When jumping decrease buffer by 1 every frame
+	coyote_counter -= 1;										// When jumping decrease coyote buffer by 1 every frame
 	
 	if (on_wall != 0)
 	{
@@ -164,7 +160,7 @@ else
 			sprite_index = spr_player_jump;
 		}
 	}
-
+	
 	if (v_speed < 0 && !jump_held)								// Smooth jumping
 	{
 		v_speed = max(v_speed, -jump_speed / 2);
@@ -178,12 +174,31 @@ else
 	}
 }
 
-if (dash_duration > 0 )
+if (dash_duration > 0)
 {
 	sprite_index = spr_player_dash;
+	var obj_dash_effect = instance_create_depth(x, y, depth + 1, obj_player_dash_effect);
+
+	if (image_xscale = 1)
+	{
+		obj_dash_effect.image_xscale = 1;
+	}
+	else
+	{
+		obj_dash_effect.image_xscale = -1;
+	}
+	
+	// Particles when player is on ground
+	if (on_ground)
+	{
+		repeat (3)
+		{
+			instance_create_layer(x, bbox_bottom, "Player", obj_player_dust);
+		}
+	}
 }
 
-if (jump && coyote_counter > 0)									// Jumping ** while jump buffer is higher than 0 we can jump
+if (jump && coyote_counter > 0)									// Jumping ** while coyote buffer is higher than 0 we can jump
 {
 	audio_play_sound(snd_player_jump, 1, false);
 	v_speed = -7;
@@ -253,3 +268,4 @@ else if (footstep_wait > 0)
 }
 
 #endregion
+

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Particles",
-    "path": "folders/Sprites/Particles.yy",
+    "name": "Water",
+    "path": "folders/Sprites/Water.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_water_bubble",
