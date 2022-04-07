@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Platforms",
-    "path": "folders/Objects/Platforms.yy",
+    "name": "Static collision blocks",
+    "path": "folders/Objects/Static collision blocks.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid_jumpthrough_platform",

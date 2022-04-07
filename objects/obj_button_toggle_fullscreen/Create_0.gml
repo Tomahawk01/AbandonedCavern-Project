@@ -6,7 +6,7 @@ y2 = y + (sprite_height / 2);
 
 hover = false;
 
-text = "OFF"
+text = "OFF";
 
-explain = "FULLSCREEN:\nToggle between Fullscreen and Windowed modes"
+explain = "FULLSCREEN:\nToggle between Fullscreen and Windowed modes";
 

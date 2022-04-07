@@ -3,6 +3,5 @@
 thisAlpha = 1;		// Value to change
 addUp = 0.01;
 
-grab_layer = "Fake_tiles";
 handlerAlpha = shader_get_uniform(sh_ChangeAlpha, "alpha");
 

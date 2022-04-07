@@ -25,7 +25,7 @@ else
 
 on_ground = place_meeting(x, y + 1, obj_solid_wall);											// Checking if the player is on ground
 on_wall = place_meeting(x + 1, y, obj_solid_wall) - place_meeting(x - 1, y, obj_solid_wall);	// Checking if the player is on a wall
-on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);			// For moving platforms
+on_moving_platform = instance_place(x, y + max(1, v_speed), obj_moving_platform);				// For moving platforms
 
 // Dashing
 dash_duration = max(dash_duration - 1, 0);														// Decrement dash duration every step
@@ -40,6 +40,7 @@ if (dash_cooldown <= 0)
 {
 	if (dash)
 	{
+		audio_play_sound(snd_player_dash, 1, false);		// Dash SFX
 		dash_duration = 15;
 		dash_cooldown = 40;
 		h_speed = image_xscale * dash_speed;

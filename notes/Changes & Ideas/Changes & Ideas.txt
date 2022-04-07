@@ -40,17 +40,20 @@ DONE:
 29. Multiple sources of light
 30. Fixed an issue where the player move down on the platform and be unable to stand properly
 31. Fake walls
-32. 
+32. Lava
+33. New own character sprites
+34. Dash sfx
+35. Antialiasing switcher
+36. 
 
 TODO:
-- More traps (lava zone etc.)
+- New tiles
 - Make lobby with teleports to other levels
 
-AND at the end design 2-3 locations
+AND at the end design 2-3 locations (cave(main lobby with portals), swamp, water, winter)
 
 Ideas (Maybe I will add them):
-- Wall grab (if jump_held v_speed on wall equals 0)
-- Movable rocks (need own character sprites with more animations)
-- Button remapping
-- Zones, when player collide with it camera will attach to the center of the zone.
+- Resolutions
+- More traps
+- Localization (external .csv file)
 

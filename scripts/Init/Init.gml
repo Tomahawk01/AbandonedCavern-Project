@@ -15,6 +15,6 @@ function Init(){
 	{
 		audio_play_sound(snd_ost_bloodborne_metal, 1, true);
 	}
-	
+
 	window_set_cursor(cr_default);
 }

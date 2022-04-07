@@ -479,7 +479,7 @@
     "spriteId": {"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 60.0,
+    "playbackSpeed": 45.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
