@@ -14,15 +14,15 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 33,
+  "width": 32,
   "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 16,
+  "gridY": 16,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"34a3cb18-a2f8-4280-b18f-c3f33dce6636","path":"sprites/spr_spikes/spr_spikes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"34a3cb18-a2f8-4280-b18f-c3f33dce6636","path":"sprites/spr_spikes/spr_spikes.yy",},"LayerId":{"name":"8d5e456c-8ad8-49a0-9842-ea3c0fdc7ee8","path":"sprites/spr_spikes/spr_spikes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

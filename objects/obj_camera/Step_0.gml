@@ -2,11 +2,13 @@
 
 if not instance_exists(target) exit;
 
-x = lerp(x, target.x, 0.1);
-y = lerp(y, target.y - global.view_height / 4, 0.1);
+// Smoothly move the camera to the target
+x = lerp(x, target.x, CAM_SMOOTH);
+y = lerp(y, target.y, CAM_SMOOTH);
 
-x = clamp(x, (global.view_width / 2) + shake_buff, room_width - (global.view_width / 2) + shake_buff);					// Camera stops when it reaches the end of the room (horizontal)
-y = clamp(y, (global.view_height / 2) + shake_buff, room_height - (global.view_height / 2) + shake_buff);					// Camera stops when it reaches the end of the room (vertical)
+// Camera stops when it reaches the end of the room
+x = clamp(x, (global.view_width / 2), room_width - (global.view_width / 2));
+y = clamp(y, (global.view_height / 2), room_height - (global.view_height / 2));
 
 // Screen shake
 x += random_range(-shake_remain, shake_remain);
@@ -14,6 +16,7 @@ y += random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_lenght) * shake_magnitude));
 
 camera_set_view_pos(view_camera[0], x - global.view_width / 2, y - global.view_height / 2);
+
 
 // Parallax effect for bg
 /*

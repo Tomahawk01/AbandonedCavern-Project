@@ -1,8 +1,19 @@
 
+part_number = random_range(3, 7);
+
 if (instance_exists(obj_player))
 {
-	if (place_meeting(x, y - 1, obj_player))
+	if (place_meeting(x, y - 1, obj_player) && break_it == false)
 	{
+		repeat (part_number)
+		{
+			instance_create_layer(x + 48 + random_range(-2, 2), y + 14, "Collectibles", obj_particle_falling_platform);
+		}
+		repeat (part_number)
+		{
+			instance_create_layer(x + 1 + random_range(-2, 2), y + 14, "Collectibles", obj_particle_falling_platform);
+		}
+		
 		break_it = true;
 	}
 	

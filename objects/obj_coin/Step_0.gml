@@ -1,6 +1,6 @@
 /// @desc
 
-y = y + sin(timer * 0.03) * 0.05;
+y = y + sin(timer * 0.04) * 0.17;
 
 timer++;
 

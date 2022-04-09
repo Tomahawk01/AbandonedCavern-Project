@@ -1,6 +1,3 @@
-obj_pause:
-- Need to find how to stop sounds
-
 obj_fakewall_zone:
 - Issue when creating multiple zones. They didn't work. Only last zone that I place can trigger all.
 I can create only one zone.

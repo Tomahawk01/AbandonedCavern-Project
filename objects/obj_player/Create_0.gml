@@ -39,3 +39,4 @@ if (global.checkpointR == room)		// Checkpoint
 	x = global.checkpointx;
 	y = global.checkpointy;
 }
+

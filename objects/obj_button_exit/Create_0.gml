@@ -1,6 +1,6 @@
 /// @desc
 
-x = display_get_gui_width() / 2;
+x = room_width / 2;
 
 x1 = x - (sprite_width / 2);
 y1 = y - (sprite_height / 2);

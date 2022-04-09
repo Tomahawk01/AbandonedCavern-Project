@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Ladders",
+    "path": "folders/Objects/Entities/Ladders.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ladder",

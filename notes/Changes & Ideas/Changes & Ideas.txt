@@ -21,7 +21,7 @@ DONE:
 14. Transitions
 15. Collectibles coins & runes
 16. Screen Shake
-//  ------		v 0.2.0 - v 0.3.0
+//  ------		v 0.2.0 - v 0.2.17
 17. Menu screen
 18. UI
 19. Add transition fade in/out when the game starts
@@ -44,16 +44,26 @@ DONE:
 33. New own character sprites
 34. Dash sfx
 35. Antialiasing switcher
-36. 
-
-TODO:
-- New tiles
-- Make lobby with teleports to other levels
+//  ------		v 0.2.18 - v 0.2.30
+36. Chain ladders
+37. Updated checkpoint sprite
+38. Added new collectibles sprite + GUI
+39. New spikes sprite
+40. Added snow particles
+41. Updated platforms sprites and adder partricles
+42. Camera fix
+43. Added alternative player inputs (arrow keys and "Z", "X")
+44. New movable saws: left-right, up-down (Paths)
+45. Updated gate and button sprites
+46. Updated fireball and trap sprites
+47. Updated water splash sprite
+//  ------		v 0.2.30 - v 0.3.0
+48. 
+49. 
 
 AND at the end design 2-3 locations (cave(main lobby with portals), swamp, water, winter)
 
 Ideas (Maybe I will add them):
-- Resolutions
-- More traps
+- Aspect ratio
 - Localization (external .csv file)
 

@@ -3,17 +3,23 @@
 // Player inputs
 if (!instance_exists(obj_fade))
 {
-	var h_direction = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-	var jump = keyboard_check_pressed(vk_space);
-	var jump_held = keyboard_check(vk_space);
-	var up = keyboard_check(ord("W"));
-	down = keyboard_check(ord("S"));
-	var dash = keyboard_check_pressed(vk_shift);
+	key_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
+	key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
+	
+	var h_direction = key_right - key_left;
+	var jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
+	var jump_held = keyboard_check(vk_space) || keyboard_check(ord("Z"));
+	var up = keyboard_check(ord("W")) || keyboard_check(vk_up);
+	down = keyboard_check(ord("S")) || keyboard_check(vk_down);
+	var dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"));
 }
 else
 {
 	h_speed = 0;
 	v_speed = 0;
+	
+	key_left = 0;
+	key_right = 0;
 	
 	h_direction = 0;
 	jump = 0;

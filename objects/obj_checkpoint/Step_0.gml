@@ -1,7 +1,5 @@
 /// @desc
 
-image_angle += 1;
-
 if (global.checkpoint == id)
 	{
 		image_index = 1;

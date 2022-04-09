@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Interactable",
-    "path": "folders/Sprites/Interactable.yy",
+    "name": "Ladders",
+    "path": "folders/Sprites/Interactable/Ladders.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ladder",

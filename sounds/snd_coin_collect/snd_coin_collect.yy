@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.45,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_coin_collect.wav",
-  "duration": 0.604167,
+  "duration": 1.718753,
   "parent": {
     "name": "Player_sounds",
     "path": "folders/Sounds/Player_sounds.yy",

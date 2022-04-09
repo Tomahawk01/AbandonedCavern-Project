@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 16,
+  "gridY": 11,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3b91e541-a7d0-40c9-8332-43c5ce2c5fd4","path":"sprites/spr_falling_platform/spr_falling_platform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3b91e541-a7d0-40c9-8332-43c5ce2c5fd4","path":"sprites/spr_falling_platform/spr_falling_platform.yy",},"LayerId":{"name":"fbdce726-9912-4b49-985b-236896cdf7ce","path":"sprites/spr_falling_platform/spr_falling_platform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
