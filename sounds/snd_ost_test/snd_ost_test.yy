@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.17,
+  "volume": 0.35,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_ost_test.mp3",
-  "duration": 254.354279,
+  "duration": 104.777145,
   "parent": {
     "name": "OST",
     "path": "folders/Sounds/OST.yy",

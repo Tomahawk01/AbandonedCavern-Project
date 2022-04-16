@@ -14,6 +14,8 @@ if (instance_exists(obj_player))
 			instance_create_layer(x + 1 + random_range(-2, 2), y + 14, "Collectibles", obj_particle_falling_platform);
 		}
 		
+		audio_play_sound(snd_wood_platform_break, 10, false);
+
 		break_it = true;
 	}
 	

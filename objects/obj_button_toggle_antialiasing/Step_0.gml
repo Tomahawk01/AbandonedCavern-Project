@@ -21,10 +21,24 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 		if (text == "OFF")
 		{
 			gpu_set_tex_filter(true);
+			global.anti_aliasing = 1;
+
+			ini_open("Save.sav");
+	
+			ini_write_real("Settings", "anti-aliasing", global.anti_aliasing);
+	
+			ini_close();
 		}
 		else
 		{
 			gpu_set_tex_filter(false);
+			global.anti_aliasing = 0;
+
+			ini_open("Save.sav");
+	
+			ini_write_real("Settings", "anti-aliasing", global.anti_aliasing);
+	
+			ini_close();
 		}
 	}
 }

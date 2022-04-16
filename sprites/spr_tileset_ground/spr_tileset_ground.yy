@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 32,
+  "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"12bbdb14-0e64-4a20-8031-196c940d7945","path":"sprites/spr_tileset_ground/spr_tileset_ground.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"12bbdb14-0e64-4a20-8031-196c940d7945","path":"sprites/spr_tileset_ground/spr_tileset_ground.yy",},"LayerId":{"name":"4a05e05e-355a-419b-999e-07107a196f64","path":"sprites/spr_tileset_ground/spr_tileset_ground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

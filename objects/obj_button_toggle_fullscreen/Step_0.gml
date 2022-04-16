@@ -18,7 +18,26 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 	{
 		audio_play_sound(snd_menu_button_selected, 1, false);
 		
-		window_set_fullscreen(!window_get_fullscreen());
+		if (text == "OFF")
+		{
+			window_set_fullscreen(true);
+			global.is_fullscreen = 1;
+			ini_open("Save.sav");
+	
+			ini_write_real("Settings", "fullscreen", global.is_fullscreen);
+	
+			ini_close();
+		}
+		else
+		{
+			window_set_fullscreen(false);
+			global.is_fullscreen = 0;
+			ini_open("Save.sav");
+	
+			ini_write_real("Settings", "fullscreen", global.is_fullscreen);
+	
+			ini_close();
+		}
 	}
 }
 else

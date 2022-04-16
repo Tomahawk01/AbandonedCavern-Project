@@ -58,12 +58,18 @@ DONE:
 46. Updated fireball and trap sprites
 47. Updated water splash sprite
 //  ------		v 0.2.30 - v 0.3.0
-48. 
-49. 
+48. Options Saving
+49. Volume slider
+50. New falling platform crash sound
+51. New title and logo
+52. Particles at lobby room (ground)
+53. Lobby room
+54. Controls sprite tutorial
+//  ------		v 0.3.00 - release
+55.
+56.
+57.
+58.
 
 AND at the end design 2-3 locations (cave(main lobby with portals), swamp, water, winter)
-
-Ideas (Maybe I will add them):
-- Aspect ratio
-- Localization (external .csv file)
 

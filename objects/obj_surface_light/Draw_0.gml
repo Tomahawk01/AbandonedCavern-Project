@@ -22,6 +22,14 @@ if (surface_exists(surface))
 	{
 		draw_sprite_ext(spr_sphere, 0, x - _cx, y - _cy, 0.3 + random(0.05), 0.3 + random(0.05), 0, c_white, 1);
 	}
+	with (obj_big_torch)
+	{
+		draw_sprite_ext(spr_sphere, 0, x - _cx, y - _cy, 0.6 + random(0.05), 0.3 + random(0.05), 0, c_white, 1);
+	}
+	with (obj_wall_torch)
+	{
+		draw_sprite_ext(spr_sphere, 0, x - _cx, y - _cy, 0.5 + random(0.05), 0.3 + random(0.05), 0, c_white, 1);
+	}
 	
 	gpu_set_blendmode(bm_normal);
 	

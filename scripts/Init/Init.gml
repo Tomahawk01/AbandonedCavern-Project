@@ -9,11 +9,50 @@ function Init(){
 	global.coins = 0;
 	
 	global.checkpoint = noone;
-	global.checkpointR = rm_dev_secret;
-	global.checkpointx = 940;
-	global.checkpointy = 844;
-	global.target_x = 940;
-	global.target_y = 844;
+	global.checkpointR = rm_lobby;
+	global.checkpointx = 5120;
+	global.checkpointy = 830;
+	global.target_x = 5120;
+	global.target_y = 830;
+	
+	global.is_fullscreen = 1;
+	global.anti_aliasing = 0;
+	global.music_gain = 0.95;
+	
+	// Check settings and apply it
+	if (file_exists("Save.sav"))
+	{
+		ini_open("Save.sav");
+	
+		global.is_fullscreen = ini_read_real("Settings", "fullscreen", 1);
+		global.anti_aliasing = ini_read_real("Settings", "anti-aliasing", 0);
+		global.music_gain = ini_read_real("Settings", "volume", 0.95);
+	
+		ini_close();
+	}
+	
+	if (global.is_fullscreen == 1)
+	{
+		window_set_fullscreen(true);
+	}
+	else
+	{
+		window_set_fullscreen(false);
+	}
+	
+	if (global.anti_aliasing == 1)
+	{
+		gpu_set_tex_filter(true);
+	}
+	else
+	{
+		gpu_set_tex_filter(false);
+	}
+	
+	if (global.music_gain >= 0)
+	{
+		audio_master_gain(global.music_gain);
+	}
 	
 	// Play music
 	if (!audio_is_playing(snd_ost_menu))

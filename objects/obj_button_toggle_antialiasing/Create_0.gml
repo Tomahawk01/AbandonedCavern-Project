@@ -8,5 +8,5 @@ hover = false;
 
 text = "OFF";
 
-explain = "TEXTURE FILTERING:\nTurns texture interpolation";
+explain = "ANTI-ALIASING:\nTurns texture interpolation";
 

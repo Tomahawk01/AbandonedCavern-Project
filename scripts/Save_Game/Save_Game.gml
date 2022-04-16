@@ -18,6 +18,9 @@ function Save_Game(){
 	ini_write_real("Autosave", "x", global.checkpointx);
 	ini_write_real("Autosave", "y", global.checkpointy);
 	ini_write_real("Autosave", "coins", global.coins);
+	ini_write_real("Settings", "fullscreen", global.is_fullscreen);
+	ini_write_real("Settings", "anti-aliasing", global.anti_aliasing);
+	ini_write_real("Settings", "volume", global.music_gain);
 	
 	ini_close();
 }

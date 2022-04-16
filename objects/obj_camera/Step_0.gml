@@ -15,7 +15,7 @@ x += random_range(-shake_remain, shake_remain);
 y += random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_lenght) * shake_magnitude));
 
-camera_set_view_pos(view_camera[0], x - global.view_width / 2, y - global.view_height / 2);
+camera_set_view_pos(view_camera[0], x - (global.view_width / 2), y - (global.view_height / 2));
 
 
 // Parallax effect for bg

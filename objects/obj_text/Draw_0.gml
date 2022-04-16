@@ -10,5 +10,5 @@ draw_sprite(spr_marker, 0, x, y);
 draw_set_alpha(1);
 
 // Draw text
-Draw_set_text(c_white, ft_menu, fa_center, fa_top);			// in Script
+Draw_set_text(c_white, ft_gui, fa_center, fa_top);			// in Script
 draw_text(x, y - h - border, text_current);

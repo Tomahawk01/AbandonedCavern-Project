@@ -14,7 +14,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 		}
 		else
 		{
-			Fade_Out(rm_dev_secret, global.target_x, global.target_y);
+			Fade_Out(rm_lobby, global.target_x, global.target_y);
 		}
 	}
 }

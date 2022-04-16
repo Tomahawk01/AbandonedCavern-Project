@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Sprites/Backgrounds.yy",
+    "name": "Swamp",
+    "path": "folders/Sprites/Backgrounds/Swamp.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fog",

@@ -14,8 +14,8 @@
   "soundFile": "snd_wind.wav",
   "duration": 59.9989128,
   "parent": {
-    "name": "Embient",
-    "path": "folders/Sounds/Embient.yy",
+    "name": "Ambient",
+    "path": "folders/Sounds/Ambient.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_wind",

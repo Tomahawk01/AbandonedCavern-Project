@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
   "soundFile": "snd_rain_forest.mp3",
   "duration": 111.48,
   "parent": {
-    "name": "Embient",
-    "path": "folders/Sounds/Embient.yy",
+    "name": "Ambient",
+    "path": "folders/Sounds/Ambient.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_rain_forest",

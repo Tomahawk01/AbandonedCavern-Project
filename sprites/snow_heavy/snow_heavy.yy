@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Sprites/Backgrounds.yy",
+    "name": "Snow",
+    "path": "folders/Sprites/Backgrounds/Snow.yy",
   },
   "resourceVersion": "1.0",
   "name": "snow_heavy",
