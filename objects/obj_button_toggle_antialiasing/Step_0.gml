@@ -24,9 +24,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 			global.anti_aliasing = 1;
 
 			ini_open("Save.sav");
-	
-			ini_write_real("Settings", "anti-aliasing", global.anti_aliasing);
-	
+				Save_Game();
 			ini_close();
 		}
 		else
@@ -35,9 +33,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 			global.anti_aliasing = 0;
 
 			ini_open("Save.sav");
-	
-			ini_write_real("Settings", "anti-aliasing", global.anti_aliasing);
-	
+				Save_Game();
 			ini_close();
 		}
 	}

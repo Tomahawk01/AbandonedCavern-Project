@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Surrounding",
-    "path": "folders/Sprites/Surrounding.yy",
+    "name": "Winter",
+    "path": "folders/Sprites/Surrounding/Winter.yy",
   },
   "resourceVersion": "1.0",
   "name": "Tree___Pine_04",

@@ -66,7 +66,7 @@ DONE:
 53. Lobby room
 54. Controls sprite tutorial
 //  ------		v 0.3.00 - release
-55.
+55. Save bug fix
 56.
 57.
 58.

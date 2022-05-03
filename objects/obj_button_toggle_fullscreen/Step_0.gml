@@ -23,9 +23,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 			window_set_fullscreen(true);
 			global.is_fullscreen = 1;
 			ini_open("Save.sav");
-	
-			ini_write_real("Settings", "fullscreen", global.is_fullscreen);
-	
+				Save_Game();
 			ini_close();
 		}
 		else
@@ -33,9 +31,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 0)
 			window_set_fullscreen(false);
 			global.is_fullscreen = 0;
 			ini_open("Save.sav");
-	
-			ini_write_real("Settings", "fullscreen", global.is_fullscreen);
-	
+				Save_Game();
 			ini_close();
 		}
 	}
